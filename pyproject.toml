@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools", "wheel", "setuptools-git-versioning"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "st7789_emulator"
+dynamic = ["version"]
+description = "Emulator for Pimoroni ST7789 Display library."
+requires-python = ">= 3.7"
+license = {file = "LICENSE"}
+readme = "README.md"
+authors = [
+    { name = "Benjamin Dodd", email = "ben-dodd@outlook.com"}
+]
+maintainers = [
+    { name = "Benjamin Dodd", email = "ben-dodd@outlook.com"}
+]
+keywords = [
+    "Pi",
+    "Raspberry",
+    "st7789",
+    "pimoroni"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Hardware",
+]
+dependencies = [
+    "pillow"
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://ben-dodd.com/"
+Repository = "https://github.com/mitgobla/st7789-python-emulator"
+
+[tool.setuptools-git-versioning]
+enabled = true
